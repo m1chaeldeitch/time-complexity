@@ -97,7 +97,9 @@ if __name__ == '__main__':
     #Create analysis objects from all the function nodes
     analyses = create_nodes(functions)
     #analyze_node(analyses[0])
-    x = analyze_node(analyses[0])
+    index = 1
+    x = analyze_node(analyses[index])
+    print(f"The function \'{analyses[index].node.decl.name}\' is o(n^{x})")
 print('end')
-ast.show()
+#ast.show()
 
